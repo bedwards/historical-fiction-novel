@@ -257,6 +257,19 @@ Grades are 0-100:
 
 ## Consistency Checking
 
+### Book Bible ↔ Checker Schema Contract
+
+The `consistency_checker.py` validates against `book_bible.yaml`. These field names must stay in sync:
+
+| Concept | Accepted YAML fields | Notes |
+|---------|---------------------|-------|
+| Character name | `name`, `full_name` | Either works; `full_name` preferred |
+| Birth date | `birth_date`, `born`, `birth_year` | Accepts YYYY, YYYY-MM, YYYY-MM-DD, or season-qualified ("1492, spring") |
+| Death date | `death_date`, `died`, `death_year` | Same date formats as birth |
+| Timeline dates | `date` | Supports YYYY, YYYY-MM, YYYY-MM-DD, and season-qualified strings |
+
+If you add new fields to book_bible.yaml, update `_load_characters()` / `_load_timeline()` in the checker.
+
 ### Automated (Python scripts — trust these over LLM judgment for math)
 - Character ages at any point in the timeline
 - Relationship durations (married X years, divorced Y years ago)

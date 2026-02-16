@@ -185,8 +185,9 @@ assemble_manuscript() {
         content=$(cat "$scene_file")
 
         # Strip YAML front matter (--- ... ---)
+        # Removes everything from the opening --- through the closing --- inclusive
         if echo "$content" | head -1 | grep -q '^---$'; then
-            content=$(echo "$content" | sed '1,/^---$/{ /^---$/!d; }' | sed '1d')
+            content=$(echo "$content" | awk 'BEGIN{skip=0} NR==1 && /^---$/{skip=1; next} skip && /^---$/{skip=0; next} !skip')
         fi
 
         # Strip any markdown headers from scene files (they're structural, not content)
