@@ -122,6 +122,15 @@ class Issue:
 # Parsing helpers
 # ---------------------------------------------------------------------------
 
+_SEASON_MONTHS = {
+    "spring": 4, "summer": 7, "autumn": 10, "fall": 10, "winter": 1,
+    "early spring": 3, "late spring": 5,
+    "early summer": 6, "late summer": 8,
+    "early autumn": 9, "late autumn": 11, "early fall": 9, "late fall": 11,
+    "early winter": 12, "late winter": 2,
+}
+
+
 def parse_date_flexible(value: Any) -> Optional[date]:
     """Parse a date from various YAML representations.
 
@@ -129,6 +138,7 @@ def parse_date_flexible(value: Any) -> Optional[date]:
         - datetime.date objects (YAML auto-parses YYYY-MM-DD)
         - Strings in YYYY-MM-DD, YYYY-MM, or YYYY formats
         - Integer years (e.g. 1920)
+        - Season-qualified dates: "1492, spring", "spring 1492", "1492 late summer"
     """
     if value is None:
         return None
@@ -143,10 +153,18 @@ def parse_date_flexible(value: Any) -> Optional[date]:
     m = re.match(r"^(\d{4})-(\d{1,2})$", s)
     if m:
         return date(int(m.group(1)), int(m.group(2)), 1)
-    # YYYY (assume January 1)
+    # YYYY (assume January 1) — only if the string is purely a year
     m = re.match(r"^(\d{4})$", s)
     if m:
         return date(int(m.group(1)), 1, 1)
+    # Season-qualified: "1492, spring", "spring 1492", "1492 late summer", etc.
+    s_lower = s.lower()
+    year_match = re.search(r"\d{4}", s_lower)
+    if year_match:
+        year = int(year_match.group())
+        rest = s_lower.replace(year_match.group(), "").strip().strip(",").strip()
+        if rest in _SEASON_MONTHS:
+            return date(year, _SEASON_MONTHS[rest], 1)
     return None
 
 
@@ -194,7 +212,7 @@ class StoryBible:
     def _load_characters(self) -> None:
         chars_data = self.raw.get("characters", {})
         if isinstance(chars_data, list):
-            items = [(c.get("name", f"unnamed_{i}"), c) for i, c in enumerate(chars_data)]
+            items = [(c.get("name") or c.get("full_name", f"unnamed_{i}"), c) for i, c in enumerate(chars_data)]
         else:
             items = chars_data.items()
 
@@ -204,8 +222,8 @@ class StoryBible:
             char = Character(
                 name=name,
                 aliases=data.get("aliases", []) or [],
-                birth_date=parse_date_flexible(data.get("birth_date") or data.get("born")),
-                death_date=parse_date_flexible(data.get("death_date") or data.get("died")),
+                birth_date=parse_date_flexible(data.get("birth_date") or data.get("born") or data.get("birth_year")),
+                death_date=parse_date_flexible(data.get("death_date") or data.get("died") or data.get("death_year")),
                 physical=data.get("physical", {}) or {},
                 relationships=data.get("relationships", []) or [],
                 locations_timeline=data.get("locations_timeline", []) or [],
@@ -263,6 +281,8 @@ class StoryBible:
                 characters=ev.get("characters", []) or [],
                 location=ev.get("location", ""),
             ))
+        # Preserve original YAML ordering for the out-of-order check
+        self.timeline_original_order = list(self.timeline)
         self.timeline.sort(key=lambda e: e.date)
 
     def get_character(self, name: str) -> Optional[Character]:
@@ -417,7 +437,7 @@ class ConsistencyChecker:
     def check_character_ages(self) -> None:
         """Validate that character ages referenced in scenes are plausible."""
         age_pattern = re.compile(
-            r"\b(\w+(?:\s+\w+)?)\b[,\s]+(?:age[d]?\s+|(\d{1,3})\s*(?:years?\s+old|year[\s-]old))",
+            r"\b(\w+(?:\s+\w+)?)\b[,\s]+(?:age[d]?\s+(\d{1,3})|(\d{1,3})\s*(?:years?\s+old|year[\s-]old))",
             re.IGNORECASE,
         )
         explicit_age = re.compile(
@@ -431,7 +451,7 @@ class ConsistencyChecker:
             # Pattern: "Name, aged 42" or "Name, 42 years old"
             for match in age_pattern.finditer(scene.text):
                 name_token = match.group(1).strip()
-                stated_age_str = match.group(2)
+                stated_age_str = match.group(2) or match.group(3)
                 if stated_age_str is None:
                     continue
                 stated_age = int(stated_age_str)
@@ -820,10 +840,11 @@ class ConsistencyChecker:
                             reference=scene_ref(curr),
                         ))
 
-        # Also validate bible timeline events are ordered
-        for i in range(1, len(self.bible.timeline)):
-            prev_ev = self.bible.timeline[i - 1]
-            curr_ev = self.bible.timeline[i]
+        # Validate bible timeline events are ordered as written in YAML
+        original = self.bible.timeline_original_order
+        for i in range(1, len(original)):
+            prev_ev = original[i - 1]
+            curr_ev = original[i]
             if curr_ev.date < prev_ev.date:
                 self.issues.append(Issue(
                     severity="error",
