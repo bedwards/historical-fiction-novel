@@ -1,21 +1,21 @@
 # Progress: The Feast of Ashes
 
-Last updated: 2026-02-16 19:23
+Last updated: 2026-02-16 19:44
 
 ## Overall
 
 - **Status:** Writing
-- **Words:** 16,646 / 110,000 target (15.1%)
-- **Pages:** 67 / 440 estimated
-- **Reading time:** 1h 6m estimated
-- **Audiobook time:** 1h 50m estimated
-- **Chapters:** 4 / 34 complete
-- **Scenes:** 11 / 31 complete
+- **Words:** 22,063 / 110,000 target (20.1%)
+- **Pages:** 88 / 440 estimated
+- **Reading time:** 1h 28m estimated
+- **Audiobook time:** 2h 27m estimated
+- **Chapters:** 5 / 34 complete
+- **Scenes:** 14 / 31 complete
 
 ## Part 1: ESTABLISHMENT
 
 **Status:** Writing | **Grade:** --/100
-**Words:** 16,646 / 21,000 (79.3%)
+**Words:** 22,063 / 21,000 (105.1%)
 
 | Chapter | Scenes | Words | Status | Grade |
 |---------|--------|-------|--------|-------|
@@ -23,7 +23,7 @@ Last updated: 2026-02-16 19:23
 | Ch 2: The Ghetto at Evening | 3/3 | 4,111 | First Draft | -- |
 | Ch 3: The Contarini Furnace | 3/3 | 4,685 | First Draft | -- |
 | Ch 4: The Storeroom | 3/3 | 4,033 | First Draft | -- |
-| Ch 5: The Weight of Glass | 0/3 | 0 | Not Started | -- |
+| Ch 5: The Weight of Glass | 3/3 | 5,417 | First Draft | -- |
 | Ch 6: Light Through a Stolen Lens | 0/3 | 0 | Not Started | -- |
 
 ### Chapter 1: The Furnace at Dawn
@@ -68,11 +68,11 @@ Last updated: 2026-02-16 19:23
 
 | Scene | Pages | Words | Status | Grade |
 |-------|-------|-------|--------|-------|
-| 1: The accounts | 0.0 | 0 | Not Started | -- |
+| 1: The accounts | 6.9 | 1,731 | First Draft | -- |
 |   ---   |       |       |        |       |
-| 2: The Ghost | 0.0 | 0 | Not Started | -- |
+| 2: The Ghost | 8.6 | 2,146 | First Draft | -- |
 |   ---   |       |       |        |       |
-| 3: The letter | 0.0 | 0 | Not Started | -- |
+| 3: The letter | 6.2 | 1,540 | First Draft | -- |
 
 ### Chapter 6: Light Through a Stolen Lens
 
