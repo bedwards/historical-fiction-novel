@@ -1,16 +1,16 @@
 # Progress: The Feast of Ashes
 
-Last updated: 2026-02-17 08:36
+Last updated: 2026-02-17 08:50
 
 ## Overall
 
 - **Status:** Writing
-- **Words:** 34,300 / 110,000 target (31.2%)
-- **Pages:** 137 / 440 estimated
-- **Reading time:** 2h 17m estimated
-- **Audiobook time:** 3h 48m estimated
-- **Chapters:** 8 / 34 complete
-- **Scenes:** 21 / 31 complete
+- **Words:** 37,683 / 110,000 target (34.3%)
+- **Pages:** 151 / 440 estimated
+- **Reading time:** 2h 30m estimated
+- **Audiobook time:** 4h 11m estimated
+- **Chapters:** 9 / 34 complete
+- **Scenes:** 23 / 31 complete
 
 ## Part 1: ESTABLISHMENT
 
@@ -89,13 +89,13 @@ Last updated: 2026-02-17 08:36
 ## Part 2: DEEPENING
 
 **Status:** Writing | **Grade:** --/100
-**Words:** 7,415 / 22,700 (32.7%)
+**Words:** 10,798 / 22,700 (47.6%)
 
 | Chapter | Scenes | Words | Status | Grade |
 |---------|--------|-------|--------|-------|
 | Ch 7: The Guild and the Ghetto | 2/2 | 3,851 | First Draft | -- |
 | Ch 8: The Rialto | 2/2 | 3,564 | First Draft | -- |
-| Ch 9: The Craft and the Girl | 0/2 | 0 | Not Started | -- |
+| Ch 9: The Craft and the Girl | 2/2 | 3,383 | First Draft | -- |
 | Ch 10: The Silent Room | 0/2 | 0 | Not Started | -- |
 | Ch 11: The Celebration | 0/2 | 0 | Not Started | -- |
 | Ch 12: The Alhazen Letters | 0/2 | 0 | Not Started | -- |
@@ -121,9 +121,9 @@ Last updated: 2026-02-17 08:36
 
 | Scene | Pages | Words | Status | Grade |
 |-------|-------|-------|--------|-------|
-| 1: Serena's knowledge | 0.0 | 0 | Not Started | -- |
+| 1: Serena's knowledge | 6.9 | 1,724 | First Draft | -- |
 |   ---   |       |       |        |       |
-| 2: The impossible thing | 0.0 | 0 | Not Started | -- |
+| 2: The impossible thing | 6.6 | 1,659 | First Draft | -- |
 
 ### Chapter 10: The Silent Room
 
