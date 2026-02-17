@@ -1,27 +1,27 @@
 # Progress: The Feast of Ashes
 
-Last updated: 2026-02-16 18:21
+Last updated: 2026-02-16 18:37
 
 ## Overall
 
 - **Status:** Writing
-- **Words:** 7,928 / 110,000 target (7.2%)
-- **Pages:** 32 / 440 estimated
-- **Reading time:** 31m estimated
-- **Audiobook time:** 52m estimated
-- **Chapters:** 2 / 34 complete
-- **Scenes:** 5 / 31 complete
+- **Words:** 12,613 / 110,000 target (11.5%)
+- **Pages:** 50 / 440 estimated
+- **Reading time:** 50m estimated
+- **Audiobook time:** 1h 24m estimated
+- **Chapters:** 3 / 34 complete
+- **Scenes:** 8 / 31 complete
 
 ## Part 1: ESTABLISHMENT
 
 **Status:** Writing | **Grade:** --/100
-**Words:** 7,928 / 21,000 (37.8%)
+**Words:** 12,613 / 21,000 (60.1%)
 
 | Chapter | Scenes | Words | Status | Grade |
 |---------|--------|-------|--------|-------|
 | Ch 1: The Furnace at Dawn | 2/2 | 3,817 | First Draft | -- |
 | Ch 2: The Ghetto at Evening | 3/3 | 4,111 | First Draft | -- |
-| Ch 3: The Contarini Furnace | 0/3 | 0 | Not Started | -- |
+| Ch 3: The Contarini Furnace | 3/3 | 4,685 | First Draft | -- |
 | Ch 4: The Storeroom | 0/3 | 0 | Not Started | -- |
 | Ch 5: The Weight of Glass | 0/3 | 0 | Not Started | -- |
 | Ch 6: Light Through a Stolen Lens | 0/3 | 0 | Not Started | -- |
@@ -48,11 +48,11 @@ Last updated: 2026-02-16 18:21
 
 | Scene | Pages | Words | Status | Grade |
 |-------|-------|-------|--------|-------|
-| 1: The errand | 0.0 | 0 | Not Started | -- |
+| 1: The errand | 6.7 | 1,681 | First Draft | -- |
 |   ---   |       |       |        |       |
-| 2: The stranger at the dock | 0.0 | 0 | Not Started | -- |
+| 2: The stranger at the dock | 6.5 | 1,616 | First Draft | -- |
 |   ---   |       |       |        |       |
-| 3: Evening on Murano | 0.0 | 0 | Not Started | -- |
+| 3: Evening on Murano | 5.6 | 1,388 | First Draft | -- |
 
 ### Chapter 4: The Storeroom
 
