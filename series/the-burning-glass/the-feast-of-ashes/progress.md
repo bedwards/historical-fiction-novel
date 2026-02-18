@@ -1,16 +1,16 @@
 # Progress: The Feast of Ashes
 
-Last updated: 2026-02-18 03:15
+Last updated: 2026-02-18 10:53
 
 ## Overall
 
 - **Status:** Writing
-- **Words:** 117,847 / 110,000 target (107.1%)
-- **Pages:** 471 / 440 estimated
-- **Reading time:** 7h 51m estimated
-- **Audiobook time:** 13h 5m estimated
-- **Chapters:** 26 / 34 complete
-- **Scenes:** 65 / 64 complete
+- **Words:** 123,734 / 110,000 target (112.5%)
+- **Pages:** 495 / 440 estimated
+- **Reading time:** 8h 14m estimated
+- **Audiobook time:** 13h 44m estimated
+- **Chapters:** 27 / 34 complete
+- **Scenes:** 67 / 71 complete
 
 ## Part 1: ESTABLISHMENT
 
@@ -270,7 +270,7 @@ Last updated: 2026-02-18 03:15
 ## Part 4: REVELATION AND RECKONING
 
 **Status:** Writing | **Grade:** --/100
-**Words:** 23,012 / 9,200 (250.1%)
+**Words:** 28,899 / 17,600 (164.2%)
 
 | Chapter | Scenes | Words | Status | Grade |
 |---------|--------|-------|--------|-------|
@@ -279,7 +279,7 @@ Last updated: 2026-02-18 03:15
 | Ch 26: The Test | 2/2 | 4,503 | First Draft | -- |
 | Ch 27: The Unraveling | 3/3 | 5,139 | First Draft | -- |
 | Ch 28: The Exposure | 2/2 | 4,014 | First Draft | -- |
-| Ch 29: Bardolino's Choice — IC Climax | 0/0 | 0 | Not Started | -- |
+| Ch 29: Bardolino's Choice — IC Climax | 2/2 | 5,887 | First Draft | -- |
 | Ch 30: The Self-Revelation — MC Climax | 0/0 | 0 | Not Started | -- |
 
 ### Chapter 24: The Plan
@@ -312,24 +312,27 @@ Last updated: 2026-02-18 03:15
 
 | Scene | Pages | Words | Status | Grade |
 |-------|-------|-------|--------|-------|
-| 1: The Investigation | 6.5 | 1,629 | First Draft | -- |
+| 1: Scene 1 | 6.5 | 1,629 | First Draft | -- |
 |   ---   |       |       |        |       |
-| 2: Rossetti's Offer | 9.4 | 2,345 | First Draft | -- |
+| 2: Scene 2 | 9.4 | 2,345 | First Draft | -- |
 |   ---   |       |       |        |       |
-| 3: Serena's Arithmetic | 4.7 | 1,165 | First Draft | -- |
+| 3: Scene 3 | 4.7 | 1,165 | First Draft | -- |
 
 ### Chapter 28: The Exposure
 
 | Scene | Pages | Words | Status | Grade |
 |-------|-------|-------|--------|-------|
-| 1: The Discovery | 8.2 | 2,052 | First Draft | -- |
+| 1: Scene 1 | 8.2 | 2,052 | First Draft | -- |
 |   ---   |       |       |        |       |
-| 2: The Confrontation | 7.8 | 1,962 | First Draft | -- |
+| 2: Scene 2 | 7.8 | 1,962 | First Draft | -- |
 
 ### Chapter 29: Bardolino's Choice — IC Climax
 
 | Scene | Pages | Words | Status | Grade |
 |-------|-------|-------|--------|-------|
+| 1: Scene 1 | 14.1 | 3,534 | First Draft | -- |
+|   ---   |       |       |        |       |
+| 2: Scene 2 | 9.4 | 2,353 | First Draft | -- |
 
 ### Chapter 30: The Self-Revelation — MC Climax
 
